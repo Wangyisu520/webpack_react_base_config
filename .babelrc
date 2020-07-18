@@ -1,0 +1,43 @@
+// {
+//     "presets": [
+//       [
+//         "@babel/preset-env",
+//         {
+//           "useBuiltIns": "usage",
+//           "modules": false,
+//           "targets": {
+//             "browsers": "ie >= 8"
+//           }
+//         }
+//       ]
+//     ],
+//     "plugins": [
+//       [
+//         "@babel/plugin-transform-runtime",
+//         {
+//           "helpers": false
+//         }
+//       ]
+//     ]
+//   }
+
+// {
+//     "presets": [
+//         ["@babel/preset-env", {
+//             "useBuiltIns": "usage",
+//             "corejs": 3
+//         }],
+//         "babel-preset-react",
+//         "@babel/react"
+//     ] 
+// }
+
+{
+    "presets": [
+        ["@babel/preset-env", {
+            "useBuiltIns": "usage",
+            "corejs": 3
+        }],
+        "@babel/preset-react"
+    ]
+}
