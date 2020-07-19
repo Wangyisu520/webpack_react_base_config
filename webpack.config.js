@@ -79,19 +79,19 @@ module.exports = {
                             outputPath: "img"
                         }
                     },
-                    // {
-                    //     loader: "img-loader",
-                    //     options: {
-                    //         plugins: [
-                    //             require("imagemin-mozjpeg")({
-                    //                 quality: '80'
-                    //             }),
-                    //             require("imagemin-pngquant")({
-                    //                 quality: '80'
-                    //             }),
-                    //         ]
-                    //     }
-                    // }
+                    {
+                        loader: "img-loader",
+                        options: {
+                            plugins: [
+                                require("imagemin-mozjpeg")({
+                                    quality: '80'
+                                }),
+                                require("imagemin-pngquant")({
+                                    quality: '80'
+                                }),
+                            ]
+                        }
+                    }
                 ]
             },
             {
